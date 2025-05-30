@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "Witamy w TechSolutions";
+}
+
+<section class="hero-bg text-white py-20 md:py-32">
+    <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Innowacyjne Rozwiązania IT dla Twojego Biznesu</h1>
+        <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto">Specjalizujemy się w tworzeniu dedykowanego oprogramowania, aplikacji mobilnych i webowych, które napędzają wzrost i efektywność.</p>
+        <div>
+            <a asp-controller="Contact" asp-action="Index" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-150 ease-in-out mr-4 mb-4 md:mb-0 inline-block">Skontaktuj się z nami</a>
+            <a asp-controller="Home" asp-action="Services" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-150 ease-in-out inline-block">Poznaj nasze usługi</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Kim Jesteśmy?</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <img src="https://placehold.co/600x400/64748b/e2e8f0?text=Nasz+Zespół+w+Pracy" alt="[Obraz przedstawiający zespół TechSolutions przy pracy]" class="rounded-lg shadow-xl w-full">
+            </div>
+            <div>
+                <p class="text-lg mb-4">TechSolutions to dynamicznie rozwijający się software house z pasją do technologii i innowacji. Od lat dostarczamy naszym klientom rozwiązania szyte na miarę, pomagając im osiągać cele biznesowe i wyprzedzać konkurencję.</p>
+                <p class="text-lg mb-4">Nasz zespół składa się z doświadczonych programistów, projektantów UX/UI, analityków i project managerów, którzy wspólnie pracują nad sukcesem każdego projektu.</p>
+                <ul class="list-disc list-inside text-lg space-y-2">
+                    <li>Indywidualne podejście do każdego klienta</li>
+                    <li>Najwyższa jakość i dbałość o detale</li>
+                    <li>Terminowość i transparentność współpracy</li>
+                    <li>Wykorzystanie nowoczesnych technologii</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Nasze Usługi</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 p-8 text-center">
+                <div class="text-blue-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Aplikacje Webowe</h3>
+                <p class="text-gray-600">Tworzymy responsywne i wydajne aplikacje internetowe, od prostych stron po zaawansowane systemy SaaS.</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 p-8 text-center">
+                <div class="text-blue-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Aplikacje Mobilne</h3>
+                <p class="text-gray-600">Projektujemy i programujemy natywne oraz hybrydowe aplikacje mobilne na platformy iOS i Android.</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 p-8 text-center">
+                <div class="text-blue-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Rozwiązania E-commerce</h3>
+                <p class="text-gray-600">Budujemy sklepy internetowe i platformy B2B/B2C, integrując je z systemami płatności i logistyki.</p>
+            </div>
+        </div>
+        <div class="text-center mt-12">
+            <a asp-controller="Home" asp-action="Services" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-150 ease-in-out inline-block">Zobacz wszystkie usługi</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Nasze Realizacje</h2>
+        <p class="text-center text-lg mb-10 max-w-xl mx-auto">Jesteśmy dumni z projektów, które zrealizowaliśmy dla naszych klientów. Oto kilka przykładów:</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x400/94a3b8/e0e7ff?text=Projekt+Alpha" alt="[Miniatura projektu Alpha]" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Projekt Alpha</h3>
+                    <p class="text-gray-600 mb-4">Zaawansowana platforma analityczna dla sektora finansowego.</p>
+                    <a href="#" class="text-blue-600 hover:underline font-medium">Zobacz studium przypadku</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x400/94a3b8/e0e7ff?text=Aplikacja+Mobilna+Beta" alt="[Miniatura aplikacji mobilnej Beta]" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Aplikacja Mobilna Beta</h3>
+                    <p class="text-gray-600 mb-4">Innowacyjna aplikacja mobilna wspierająca zdrowy tryb życia.</p>
+                    <a href="#" class="text-blue-600 hover:underline font-medium">Zobacz studium przypadku</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x400/94a3b8/e0e7ff?text=System+E-commerce+Gamma" alt="[Miniatura systemu e-commerce Gamma]" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">System E-commerce Gamma</h3>
+                    <p class="text-gray-600 mb-4">Skalowalny sklep internetowy dla dynamicznie rozwijającej się marki.</p>
+                    <a href="#" class="text-blue-600 hover:underline font-medium">Zobacz studium przypadku</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-12">
+            <a asp-controller="Home" asp-action="Projects" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-150 ease-in-out inline-block">Zobacz więcej projektów</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 bg-blue-600 text-white">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6">Masz Pomysł na Projekt?</h2>
+        <p class="text-lg mb-8 max-w-xl mx-auto">Porozmawiajmy o tym, jak możemy pomóc Ci przekształcić Twoją wizję w rzeczywistość. Skontaktuj się z nami, aby otrzymać bezpłatną konsultację.</p>
+        <a asp-controller="Contact" asp-action="Index" class="bg-white hover:bg-gray-100 text-blue-600 font-semibold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-150 ease-in-out text-lg inline-block">Napisz do nas</a>
+    </div>
+</section>
